@@ -52,13 +52,6 @@
 ### 
 
 
-
-
-
-# 💫 About Me:
-I'm Ritesh Patel, a dedicated full-stack developer from Ghaziabad, India with a passion for building scalable web applications and solving complex problems. My philosophy is simple yet powerful: "One year builds habits, not an engineer." I believe in deliberate, consistent practice over mindless repetition, focusing on understanding the "why" behind every technology I use.<br>const aboutMe = {<br>  name: "Ritesh Patel",<br>  location: "Ghaziabad, India",<br>  pronouns: "he/him",<br>  role: "Full Stack Developer",<br>  experience: "Building projects with MERN Stack & DSA",<br>  philosophy: "Quality over quantity, fundamentals first",<br>  approach: "Learn → Build → Improve → Repeat"<br>};
-
-
 ## 🌐 Socials:
 [![Instagram](https://img.shields.io/badge/Instagram-%23E4405F.svg?logo=Instagram&logoColor=white)](https://instagram.com/riteshpatel1884) [![LinkedIn](https://img.shields.io/badge/LinkedIn-%230077B5.svg?logo=linkedin&logoColor=white)](https://linkedin.com/in/riteshpatel1884) [![X](https://img.shields.io/badge/X-black.svg?logo=X&logoColor=white)](https://x.com/riteshpatel1884) [![email](https://img.shields.io/badge/Email-D14836?logo=gmail&logoColor=white)](mailto:riteshpatel1884@gmail.com) 
 
