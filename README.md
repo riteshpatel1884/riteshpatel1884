@@ -74,233 +74,845 @@
 <!-- Proudly created with GPRM ( https://gprm.itsvg.in ) --> -->
 
 
-# 🚀 Ritesh Patel - Full Stack Developer & AI Enthusiast
+<style>
+  :root {
+    --primary: #00d9ff;
+    --secondary: #ff006e;
+    --accent: #8338ec;
+    --dark: #0a0e27;
+    --light: #f0f0ff;
+    --gold: #ffd60a;
+  }
 
-<div align="center">
+  @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700;900&family=Courier+Prime:wght@700&display=swap');
 
-```
-███████████████████████████████████████████████████████████
-█                                                           █
-█   🎯 CRAFTING ELEGANT SOLUTIONS                        █
-█   🔥 WEB DEVELOPMENT × MACHINE LEARNING               █
-█   💡 PROBLEM SOLVING × SYSTEM DESIGN                  █
-█                                                           █
-███████████████████████████████████████████████████████████
-```
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
 
-[![Typing SVG](https://readme-typing-svg.demolab.com?font=Outfit&size=32&duration=4000&pause=1000&color=00D9FF&center=true&vCenter=true&width=600&height=100&lines=Hi+There!+👋;I'm+Ritesh+Patel;Full+Stack+Developer;Building+the+Future)](https://github.com/riteshpatel1884)
+  body {
+    font-family: 'Outfit', sans-serif;
+    background: linear-gradient(135deg, #0a0e27 0%, #1a1a4a 50%, #0f0f2e 100%);
+    color: var(--light);
+    min-height: 100vh;
+    overflow-x: hidden;
+  }
+
+  /* ═══════════════════════════════════════════════════════════════ */
+  /* FLOATING ANIMATED BACKGROUND */
+  /* ═══════════════════════════════════════════════════════════════ */
+
+  .animated-bg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    overflow: hidden;
+  }
+
+  .gradient-orb {
+    position: absolute;
+    border-radius: 50%;
+    filter: blur(60px);
+    opacity: 0.3;
+  }
+
+  .orb-1 {
+    width: 400px;
+    height: 400px;
+    background: linear-gradient(135deg, #00d9ff, #0099cc);
+    top: -100px;
+    left: -100px;
+    animation: float 20s ease-in-out infinite;
+  }
+
+  .orb-2 {
+    width: 300px;
+    height: 300px;
+    background: linear-gradient(135deg, #ff006e, #8338ec);
+    bottom: -100px;
+    right: -100px;
+    animation: float 25s ease-in-out infinite reverse;
+  }
+
+  .orb-3 {
+    width: 350px;
+    height: 350px;
+    background: linear-gradient(135deg, #ffd60a, #ff006e);
+    top: 50%;
+    right: 10%;
+    animation: float 22s ease-in-out infinite;
+  }
+
+  @keyframes float {
+    0%, 100% { transform: translate(0, 0) scale(1); }
+    50% { transform: translate(30px, 30px) scale(1.1); }
+  }
+
+  /* ═══════════════════════════════════════════════════════════════ */
+  /* MAIN CONTAINER */
+  /* ═══════════════════════════════════════════════════════════════ */
+
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 60px 40px;
+    position: relative;
+    z-index: 1;
+  }
+
+  /* ═══════════════════════════════════════════════════════════════ */
+  /* HERO SECTION */
+  /* ═══════════════════════════════════════════════════════════════ */
+
+  .hero {
+    text-align: center;
+    margin-bottom: 80px;
+    animation: fadeInDown 0.8s ease-out;
+  }
+
+  .hero-title {
+    font-size: 4.5rem;
+    font-weight: 900;
+    margin-bottom: 20px;
+    background: linear-gradient(135deg, #00d9ff, #ff006e, #8338ec, #00d9ff);
+    background-size: 300% 300%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    animation: gradientShift 8s ease infinite, titlePulse 2s ease-in-out infinite;
+    letter-spacing: -2px;
+  }
+
+  @keyframes gradientShift {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+  }
+
+  @keyframes titlePulse {
+    0%, 100% { text-shadow: 0 0 20px rgba(0, 217, 255, 0.5); }
+    50% { text-shadow: 0 0 40px rgba(255, 0, 110, 0.6), 0 0 60px rgba(131, 56, 236, 0.4); }
+  }
+
+  .hero-subtitle {
+    font-size: 1.3rem;
+    color: var(--primary);
+    margin-bottom: 40px;
+    font-weight: 600;
+    animation: slideInUp 0.8s ease-out 0.2s both;
+  }
+
+  .bio-box {
+    background: rgba(255, 255, 255, 0.05);
+    border: 2px solid rgba(0, 217, 255, 0.3);
+    border-radius: 20px;
+    padding: 30px 40px;
+    margin: 30px auto;
+    max-width: 700px;
+    backdrop-filter: blur(10px);
+    animation: slideInUp 0.8s ease-out 0.4s both;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .bio-box::before {
+    content: '';
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+    background: linear-gradient(135deg, var(--primary), var(--secondary), var(--accent));
+    border-radius: 20px;
+    z-index: -1;
+    opacity: 0;
+    animation: borderGlow 3s ease-in-out infinite;
+  }
+
+  @keyframes borderGlow {
+    0%, 100% { opacity: 0; }
+    50% { opacity: 0.3; }
+  }
+
+  .bio-box:hover {
+    border-color: rgba(0, 217, 255, 0.6);
+    transform: translateY(-5px);
+    box-shadow: 0 20px 60px rgba(0, 217, 255, 0.2);
+  }
+
+  .bio-text {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: var(--light);
+    font-weight: 500;
+  }
+
+  /* ═══════════════════════════════════════════════════════════════ */
+  /* TECH STACK SECTION */
+  /* ═══════════════════════════════════════════════════════════════ */
+
+  .section-title {
+    font-size: 2.5rem;
+    font-weight: 900;
+    margin-top: 80px;
+    margin-bottom: 50px;
+    text-align: center;
+    position: relative;
+    display: inline-block;
+    width: 100%;
+  }
+
+  .section-title::after {
+    content: '';
+    position: absolute;
+    bottom: -15px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100px;
+    height: 4px;
+    background: linear-gradient(90deg, var(--primary), var(--secondary), var(--accent));
+    border-radius: 2px;
+    animation: expandWidth 1s ease-out;
+  }
+
+  @keyframes expandWidth {
+    from { width: 0; }
+    to { width: 100px; }
+  }
+
+  .tech-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 20px;
+    margin-bottom: 60px;
+  }
+
+  .tech-card {
+    background: rgba(255, 255, 255, 0.05);
+    border: 2px solid rgba(0, 217, 255, 0.2);
+    border-radius: 15px;
+    padding: 25px 15px;
+    text-align: center;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    animation: slideInUp 0.6s ease-out both;
+  }
+
+  .tech-card:nth-child(1) { animation-delay: 0.1s; }
+  .tech-card:nth-child(2) { animation-delay: 0.2s; }
+  .tech-card:nth-child(3) { animation-delay: 0.3s; }
+  .tech-card:nth-child(4) { animation-delay: 0.4s; }
+  .tech-card:nth-child(5) { animation-delay: 0.5s; }
+  .tech-card:nth-child(6) { animation-delay: 0.6s; }
+  .tech-card:nth-child(7) { animation-delay: 0.7s; }
+  .tech-card:nth-child(8) { animation-delay: 0.8s; }
+
+  .tech-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(0, 217, 255, 0.2), transparent);
+    animation: shimmer 3s infinite;
+  }
+
+  @keyframes shimmer {
+    0% { left: -100%; }
+    50% { left: 100%; }
+    100% { left: 100%; }
+  }
+
+  .tech-card:hover {
+    border-color: var(--primary);
+    background: rgba(0, 217, 255, 0.1);
+    transform: translateY(-10px) rotateZ(-2deg);
+    box-shadow: 0 20px 50px rgba(0, 217, 255, 0.3), inset 0 0 20px rgba(0, 217, 255, 0.1);
+  }
+
+  .tech-icon {
+    width: 60px;
+    height: 60px;
+    margin: 0 auto 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2.5rem;
+    transition: transform 0.3s ease;
+  }
+
+  .tech-card:hover .tech-icon {
+    transform: scale(1.2) rotateZ(10deg);
+  }
+
+  .tech-name {
+    font-weight: 700;
+    font-size: 0.95rem;
+    color: var(--light);
+    letter-spacing: 0.5px;
+  }
+
+  /* ═══════════════════════════════════════════════════════════════ */
+  /* STATS SECTION */
+  /* ═══════════════════════════════════════════════════════════════ */
+
+  .stats-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 30px;
+    margin: 60px 0;
+  }
+
+  .stat-box {
+    background: rgba(255, 255, 255, 0.05);
+    border: 2px solid rgba(0, 217, 255, 0.2);
+    border-radius: 15px;
+    padding: 40px 30px;
+    text-align: center;
+    animation: slideInUp 0.8s ease-out both;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .stat-box:nth-child(1) { animation-delay: 0.2s; }
+  .stat-box:nth-child(2) { animation-delay: 0.4s; }
+  .stat-box:nth-child(3) { animation-delay: 0.6s; }
+
+  .stat-box::after {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(circle, rgba(0, 217, 255, 0.1) 0%, transparent 70%);
+    animation: pulse 4s ease-in-out infinite;
+  }
+
+  @keyframes pulse {
+    0%, 100% { transform: scale(1); opacity: 0; }
+    50% { opacity: 1; }
+  }
+
+  .stat-number {
+    font-size: 2.5rem;
+    font-weight: 900;
+    color: var(--primary);
+    margin-bottom: 10px;
+    animation: countUp 2s ease-out;
+  }
+
+  @keyframes countUp {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+
+  .stat-label {
+    font-size: 1rem;
+    color: var(--light);
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+
+  .stat-box:hover {
+    border-color: var(--secondary);
+    background: rgba(255, 0, 110, 0.1);
+    transform: translateY(-10px);
+    box-shadow: 0 20px 50px rgba(255, 0, 110, 0.2);
+  }
+
+  /* ═══════════════════════════════════════════════════════════════ */
+  /* TIMELINE SECTION */
+  /* ═══════════════════════════════════════════════════════════════ */
+
+  .timeline {
+    position: relative;
+    max-width: 600px;
+    margin: 60px auto;
+  }
+
+  .timeline::before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 4px;
+    height: 100%;
+    background: linear-gradient(180deg, var(--primary), var(--secondary), transparent);
+    border-radius: 2px;
+  }
+
+  .timeline-item {
+    margin-bottom: 50px;
+    position: relative;
+    width: 100%;
+    animation: slideInUp 0.8s ease-out both;
+  }
+
+  .timeline-item:nth-child(1) { animation-delay: 0.3s; }
+  .timeline-item:nth-child(2) { animation-delay: 0.4s; }
+  .timeline-item:nth-child(3) { animation-delay: 0.5s; }
+
+  .timeline-marker {
+    position: absolute;
+    left: 50%;
+    top: 0;
+    width: 20px;
+    height: 20px;
+    background: var(--primary);
+    border: 4px solid #0a0e27;
+    border-radius: 50%;
+    transform: translateX(-50%);
+    animation: pulse-marker 2s ease-in-out infinite;
+  }
+
+  @keyframes pulse-marker {
+    0%, 100% { box-shadow: 0 0 0 0 rgba(0, 217, 255, 0.4); }
+    50% { box-shadow: 0 0 0 10px rgba(0, 217, 255, 0); }
+  }
+
+  .timeline-content {
+    background: rgba(255, 255, 255, 0.05);
+    border: 2px solid rgba(0, 217, 255, 0.2);
+    border-radius: 10px;
+    padding: 20px;
+    margin-left: 60px;
+    transition: all 0.3s ease;
+  }
+
+  .timeline-item:hover .timeline-content {
+    border-color: var(--primary);
+    background: rgba(0, 217, 255, 0.1);
+    box-shadow: 0 10px 30px rgba(0, 217, 255, 0.2);
+  }
+
+  .timeline-title {
+    font-weight: 700;
+    color: var(--primary);
+    margin-bottom: 5px;
+  }
+
+  .timeline-desc {
+    color: var(--light);
+    font-size: 0.95rem;
+  }
+
+  /* ═══════════════════════════════════════════════════════════════ */
+  /* SOCIAL LINKS */
+  /* ═══════════════════════════════════════════════════════════════ */
+
+  .social-section {
+    text-align: center;
+    margin: 80px 0;
+    animation: slideInUp 1s ease-out 0.6s both;
+  }
+
+  .social-links {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    margin-top: 40px;
+  }
+
+  .social-link {
+    width: 70px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(255, 255, 255, 0.05);
+    border: 2px solid rgba(0, 217, 255, 0.3);
+    border-radius: 50%;
+    font-size: 1.8rem;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    text-decoration: none;
+    position: relative;
+    overflow: hidden;
+    animation: slideInUp 0.6s ease-out both;
+  }
+
+  .social-link:nth-child(1) { animation-delay: 0.4s; }
+  .social-link:nth-child(2) { animation-delay: 0.5s; }
+  .social-link:nth-child(3) { animation-delay: 0.6s; }
+  .social-link:nth-child(4) { animation-delay: 0.7s; }
+
+  .social-link::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(135deg, var(--primary), var(--secondary));
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    z-index: -1;
+  }
+
+  .social-link:hover::before {
+    opacity: 0.2;
+  }
+
+  .social-link:hover {
+    border-color: var(--primary);
+    transform: translateY(-8px) rotateZ(10deg) scale(1.1);
+    box-shadow: 0 20px 40px rgba(0, 217, 255, 0.3);
+  }
+
+  /* ═══════════════════════════════════════════════════════════════ */
+  /* FOOTER */
+  /* ═══════════════════════════════════════════════════════════════ */
+
+  .footer {
+    text-align: center;
+    padding: 60px 20px;
+    margin-top: 100px;
+    border-top: 2px solid rgba(0, 217, 255, 0.2);
+    animation: slideInUp 1.2s ease-out 0.8s both;
+  }
+
+  .footer-text {
+    color: var(--light);
+    font-size: 0.95rem;
+    letter-spacing: 0.5px;
+    margin-bottom: 20px;
+  }
+
+  .visitor-badge {
+    display: inline-block;
+    padding: 10px 20px;
+    background: rgba(0, 217, 255, 0.1);
+    border: 2px solid var(--primary);
+    border-radius: 20px;
+    color: var(--primary);
+    font-weight: 600;
+    animation: pulse-text 2s ease-in-out infinite;
+  }
+
+  @keyframes pulse-text {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.7; }
+  }
+
+  /* ═══════════════════════════════════════════════════════════════ */
+  /* ANIMATIONS */
+  /* ═══════════════════════════════════════════════════════════════ */
+
+  @keyframes fadeInDown {
+    from {
+      opacity: 0;
+      transform: translateY(-30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  @keyframes slideInUp {
+    from {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  /* ═══════════════════════════════════════════════════════════════ */
+  /* RESPONSIVE */
+  /* ═══════════════════════════════════════════════════════════════ */
+
+  @media (max-width: 768px) {
+    .hero-title {
+      font-size: 2.5rem;
+    }
+
+    .container {
+      padding: 40px 20px;
+    }
+
+    .section-title {
+      font-size: 1.8rem;
+    }
+
+    .tech-grid {
+      grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+      gap: 15px;
+    }
+
+    .social-links {
+      gap: 20px;
+    }
+
+    .social-link {
+      width: 60px;
+      height: 60px;
+      font-size: 1.5rem;
+    }
+
+    .timeline::before {
+      left: 20px;
+    }
+
+    .timeline-marker {
+      left: 20px;
+    }
+
+    .timeline-content {
+      margin-left: 60px;
+    }
+  }
+</style>
+
+<!-- Animated Background -->
+<div class="animated-bg">
+  <div class="gradient-orb orb-1"></div>
+  <div class="gradient-orb orb-2"></div>
+  <div class="gradient-orb orb-3"></div>
+</div>
+
+<div class="container">
+
+  <!-- HERO SECTION -->
+  <div class="hero">
+    <h1 class="hero-title">RITESH PATEL</h1>
+    <p class="hero-subtitle">Full Stack Developer × AI Enthusiast × Problem Solver</p>
+    
+    <div class="bio-box">
+      <p class="bio-text">
+        🚀 Crafting elegant solutions at the intersection of web development and machine learning. 
+        Deep dive into systems architecture, solve complex problems, and build products that create impact.
+      </p>
+    </div>
+  </div>
+
+  <!-- TECH STACK SECTION -->
+  <div>
+    <h2 class="section-title">💻 TECH ARSENAL</h2>
+    
+    <h3 style="text-align: center; color: #00d9ff; margin: 60px 0 40px 0; font-size: 1.3rem; text-transform: uppercase; letter-spacing: 2px;">Frontend</h3>
+    <div class="tech-grid">
+      <div class="tech-card">
+        <div class="tech-icon">⚡</div>
+        <div class="tech-name">HTML5</div>
+      </div>
+      <div class="tech-card">
+        <div class="tech-icon">🎨</div>
+        <div class="tech-name">Tailwind CSS</div>
+      </div>
+      <div class="tech-card">
+        <div class="tech-icon">✨</div>
+        <div class="tech-name">JavaScript</div>
+      </div>
+      <div class="tech-card">
+        <div class="tech-icon">⚛️</div>
+        <div class="tech-name">React</div>
+      </div>
+      <div class="tech-card">
+        <div class="tech-icon">▲</div>
+        <div class="tech-name">Next.js</div>
+      </div>
+      <div class="tech-card">
+        <div class="tech-icon">🎭</div>
+        <div class="tech-name">TypeScript</div>
+      </div>
+    </div>
+
+    <h3 style="text-align: center; color: #ff006e; margin: 60px 0 40px 0; font-size: 1.3rem; text-transform: uppercase; letter-spacing: 2px;">Backend & Database</h3>
+    <div class="tech-grid">
+      <div class="tech-card">
+        <div class="tech-icon">🟢</div>
+        <div class="tech-name">Node.js</div>
+      </div>
+      <div class="tech-card">
+        <div class="tech-icon">☕</div>
+        <div class="tech-name">Java</div>
+      </div>
+      <div class="tech-card">
+        <div class="tech-icon">🚂</div>
+        <div class="tech-name">Express.js</div>
+      </div>
+      <div class="tech-card">
+        <div class="tech-icon">🍃</div>
+        <div class="tech-name">MongoDB</div>
+      </div>
+      <div class="tech-card">
+        <div class="tech-icon">🐘</div>
+        <div class="tech-name">PostgreSQL</div>
+      </div>
+      <div class="tech-card">
+        <div class="tech-icon">📊</div>
+        <div class="tech-name">MySQL</div>
+      </div>
+    </div>
+
+    <h3 style="text-align: center; color: #8338ec; margin: 60px 0 40px 0; font-size: 1.3rem; text-transform: uppercase; letter-spacing: 2px;">AI & Data Science</h3>
+    <div class="tech-grid">
+      <div class="tech-card">
+        <div class="tech-icon">🐍</div>
+        <div class="tech-name">Python</div>
+      </div>
+      <div class="tech-card">
+        <div class="tech-icon">🧠</div>
+        <div class="tech-name">TensorFlow</div>
+      </div>
+      <div class="tech-card">
+        <div class="tech-icon">🔥</div>
+        <div class="tech-name">PyTorch</div>
+      </div>
+      <div class="tech-card">
+        <div class="tech-icon">📈</div>
+        <div class="tech-name">NumPy</div>
+      </div>
+      <div class="tech-card">
+        <div class="tech-icon">📊</div>
+        <div class="tech-name">Pandas</div>
+      </div>
+      <div class="tech-card">
+        <div class="tech-icon">🎯</div>
+        <div class="tech-name">Scikit-Learn</div>
+      </div>
+    </div>
+
+    <h3 style="text-align: center; color: #ffd60a; margin: 60px 0 40px 0; font-size: 1.3rem; text-transform: uppercase; letter-spacing: 2px;">Tools & Platforms</h3>
+    <div class="tech-grid">
+      <div class="tech-card">
+        <div class="tech-icon">🔧</div>
+        <div class="tech-name">Git</div>
+      </div>
+      <div class="tech-card">
+        <div class="tech-icon">🐙</div>
+        <div class="tech-name">GitHub</div>
+      </div>
+      <div class="tech-card">
+        <div class="tech-icon">🐳</div>
+        <div class="tech-name">Docker</div>
+      </div>
+      <div class="tech-card">
+        <div class="tech-icon">🔥</div>
+        <div class="tech-name">Firebase</div>
+      </div>
+      <div class="tech-card">
+        <div class="tech-icon">🌐</div>
+        <div class="tech-name">Netlify</div>
+      </div>
+      <div class="tech-card">
+        <div class="tech-icon">▲</div>
+        <div class="tech-name">Vercel</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- STATS SECTION -->
+  <h2 class="section-title" style="margin-top: 100px;">📊 ACHIEVEMENTS</h2>
+  <div class="stats-container">
+    <div class="stat-box">
+      <div class="stat-number">500+</div>
+      <div class="stat-label">Contributions</div>
+    </div>
+    <div class="stat-box">
+      <div class="stat-number">50+</div>
+      <div class="stat-label">Projects</div>
+    </div>
+    <div class="stat-box">
+      <div class="stat-number">10K+</div>
+      <div class="stat-label">Lines of Code</div>
+    </div>
+  </div>
+
+  <!-- TIMELINE SECTION -->
+  <h2 class="section-title" style="margin-top: 100px;">🎯 CURRENT FOCUS</h2>
+  <div class="timeline">
+    <div class="timeline-item">
+      <div class="timeline-marker"></div>
+      <div class="timeline-content">
+        <div class="timeline-title">🔍 Deep Learning</div>
+        <div class="timeline-desc">Exploring advanced neural network architectures and ML systems</div>
+      </div>
+    </div>
+    <div class="timeline-item">
+      <div class="timeline-marker"></div>
+      <div class="timeline-content">
+        <div class="timeline-title">🏗️ System Design</div>
+        <div class="timeline-desc">Building scalable, high-performance distributed systems</div>
+      </div>
+    </div>
+    <div class="timeline-item">
+      <div class="timeline-marker"></div>
+      <div class="timeline-content">
+        <div class="timeline-title">🚀 Open Source</div>
+        <div class="timeline-desc">Contributing to innovative projects and community growth</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- SOCIAL SECTION -->
+  <div class="social-section">
+    <h2 class="section-title">🌐 CONNECT WITH ME</h2>
+    <div class="social-links">
+      <a href="https://linkedin.com/in/riteshpatel1884" class="social-link" title="LinkedIn">in</a>
+      <a href="https://x.com/riteshpatel1884" class="social-link" title="X / Twitter">𝕏</a>
+      <a href="https://instagram.com/riteshpatel1884" class="social-link" title="Instagram">📷</a>
+      <a href="mailto:riteshpatel1884@gmail.com" class="social-link" title="Email">✉️</a>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <div class="footer">
+    <p class="footer-text">💡 Always learning • Always building • Always improving</p>
+    <div class="visitor-badge">
+      👀 Profile Views: <span style="color: var(--primary); font-weight: 900;">Loading...</span>
+    </div>
+    <p style="color: var(--light); margin-top: 40px; font-size: 0.85rem; opacity: 0.7;">
+      © 2024 Ritesh Patel. Crafted with passion and precision.
+    </p>
+  </div>
 
 </div>
 
----
-
-## 🎨 About Me
-
-<div align="center">
-
-> **🌟 Passionate developer** transforming ideas into elegant, scalable solutions at the intersection of web development and machine learning.
-
-**Specializing in:** 
-- Full-stack web development with modern frameworks
-- Distributed systems and microservices architecture
-- Machine learning & AI integration
-- Problem-solving through clean, maintainable code
-
-</div>
-
----
-
-## 💻 Tech Arsenal
-
-### 🎯 Frontend Technologies
-
-<div align="center">
-
-| HTML5 | Tailwind CSS | JavaScript | React | Next.js | TypeScript |
-|:---:|:---:|:---:|:---:|:---:|:---:|
-| ![HTML5](https://img.shields.io/badge/-HTML5-E34C26?style=flat-square&logo=html5&logoColor=white) | ![Tailwind](https://img.shields.io/badge/-Tailwind%20CSS-38B2AC?style=flat-square&logo=tailwind-css&logoColor=white) | ![JavaScript](https://img.shields.io/badge/-JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black) | ![React](https://img.shields.io/badge/-React-61DAFB?style=flat-square&logo=react&logoColor=black) | ![Next.js](https://img.shields.io/badge/-Next.js-000000?style=flat-square&logo=next.js) | ![TypeScript](https://img.shields.io/badge/-TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white) |
-
-</div>
-
-### 🔧 Backend & Databases
-
-<div align="center">
-
-| Node.js | Java | Express.js | MongoDB | PostgreSQL | MySQL |
-|:---:|:---:|:---:|:---:|:---:|:---:|
-| ![Node.js](https://img.shields.io/badge/-Node.js-339933?style=flat-square&logo=node.js&logoColor=white) | ![Java](https://img.shields.io/badge/-Java-007396?style=flat-square&logo=java&logoColor=white) | ![Express](https://img.shields.io/badge/-Express-000000?style=flat-square&logo=express) | ![MongoDB](https://img.shields.io/badge/-MongoDB-13AA52?style=flat-square&logo=mongodb&logoColor=white) | ![PostgreSQL](https://img.shields.io/badge/-PostgreSQL-336791?style=flat-square&logo=postgresql&logoColor=white) | ![MySQL](https://img.shields.io/badge/-MySQL-4479A1?style=flat-square&logo=mysql&logoColor=white) |
-
-</div>
-
-### 🤖 AI & Data Science
-
-<div align="center">
-
-| Python | TensorFlow | PyTorch | NumPy | Pandas | Scikit-Learn |
-|:---:|:---:|:---:|:---:|:---:|:---:|
-| ![Python](https://img.shields.io/badge/-Python-3776AB?style=flat-square&logo=python&logoColor=white) | ![TensorFlow](https://img.shields.io/badge/-TensorFlow-FF6F00?style=flat-square&logo=tensorflow&logoColor=white) | ![PyTorch](https://img.shields.io/badge/-PyTorch-EE4C2C?style=flat-square&logo=pytorch&logoColor=white) | ![NumPy](https://img.shields.io/badge/-NumPy-013243?style=flat-square&logo=numpy&logoColor=white) | ![Pandas](https://img.shields.io/badge/-Pandas-150458?style=flat-square&logo=pandas&logoColor=white) | ![Scikit-Learn](https://img.shields.io/badge/-Scikit--Learn-F7931E?style=flat-square&logo=scikit-learn&logoColor=white) |
-
-</div>
-
-### 🛠️ Tools & DevOps
-
-<div align="center">
-
-| Git | GitHub | Docker | Firebase | Netlify | Vercel |
-|:---:|:---:|:---:|:---:|:---:|:---:|
-| ![Git](https://img.shields.io/badge/-Git-F05032?style=flat-square&logo=git&logoColor=white) | ![GitHub](https://img.shields.io/badge/-GitHub-181717?style=flat-square&logo=github&logoColor=white) | ![Docker](https://img.shields.io/badge/-Docker-2496ED?style=flat-square&logo=docker&logoColor=white) | ![Firebase](https://img.shields.io/badge/-Firebase-FFCA28?style=flat-square&logo=firebase&logoColor=black) | ![Netlify](https://img.shields.io/badge/-Netlify-00C7B7?style=flat-square&logo=netlify&logoColor=white) | ![Vercel](https://img.shields.io/badge/-Vercel-000000?style=flat-square&logo=vercel&logoColor=white) |
-
-</div>
-
----
-
-## 📊 GitHub Analytics
-
-<div align="center">
-
-![GitHub Stats](https://github-readme-stats.vercel.app/api?username=riteshpatel1884&theme=tokyonight&hide_border=true&include_all_commits=true&count_private=true&show_icons=true)
-
-![Streak Stats](https://github-readme-streak-stats.herokuapp.com/?user=riteshpatel1884&theme=tokyonight&hide_border=true)
-
-![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=riteshpatel1884&theme=tokyonight&hide_border=true&include_all_commits=true&count_private=true&layout=compact)
-
-</div>
-
----
-
-## 🏆 Achievements & Trophies
-
-<div align="center">
-
-![GitHub Trophies](https://github-profile-trophy.vercel.app/?username=riteshpatel1884&theme=tokyonight&no-frame=true&no-bg=true&margin-w=4&row=2&column=3)
-
-</div>
-
----
-
-## 📈 Top Contributions
-
-<div align="center">
-
-![Contribution Stats](https://github-contributor-stats.vercel.app/api?username=riteshpatel1884&limit=5&theme=tokyonight&combine_all_yearly_contributions=true)
-
-</div>
-
----
-
-## 🎯 Currently Focused On
-
-```diff
-+ 🔍 Deep Learning & Neural Networks
-+ 🏗️  System Design & Architecture
-+ 🚀 Scalable Microservices
-+ 📊 Production ML Systems
-+ 🌐 Full-Stack Web Applications
-+ 💡 Open Source Contributions
-```
-
----
-
-## 🌟 Quick Facts About Me
-
-<table align="center">
-  <tr>
-    <td align="center"><b>500+</b><br/>Contributions</td>
-    <td align="center"><b>50+</b><br/>Projects</td>
-    <td align="center"><b>10K+</b><br/>Lines of Code</td>
-    <td align="center"><b>100%</b><br/>Passion</td>
-  </tr>
-</table>
-
----
-
-## 🤝 Connect With Me
-
-<div align="center">
-
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/riteshpatel1884)
-[![Twitter](https://img.shields.io/badge/Twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white)](https://x.com/riteshpatel1884)
-[![Instagram](https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white)](https://instagram.com/riteshpatel1884)
-[![Gmail](https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:riteshpatel1884@gmail.com)
-
-</div>
-
----
-
-## 🎬 Animation & Visual Elements
-
-<div align="center">
-
-```
-╔═══════════════════════════════════════════════════════╗
-║                                                       ║
-║   ⚡ Dynamic animations & smooth transitions        ║
-║   🎨 Modern design with gradient effects            ║
-║   🚀 Performance optimized                          ║
-║   📱 Fully responsive                               ║
-║   ♿ Accessibility first                             ║
-║                                                       ║
-╚═══════════════════════════════════════════════════════╝
-```
-
-</div>
-
----
-
-## 🎨 Featured Section
-
-<div align="center">
-
-[![Snake animation](https://raw.githubusercontent.com/riteshpatel-1884/riteshpatel-1884/output/snake.svg)](https://github.com/riteshpatel1884)
-
-</div>
-
----
-
-## 📊 Activity Graph
-
-<div align="center">
-
-[![Activity Graph](https://activity-graph.herokuapp.com/graph?username=riteshpatel1884&theme=dracula&hide_border=true&custom_title=Contribution%20Graph)](https://github.com/riteshpatel1884)
-
-</div>
-
----
-
-## 🌐 Contribution Calendar
-
-<div align="center">
-
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/riteshpatel-1884/riteshpatel-1884/output/pacman-contribution-graph-dark.svg">
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/riteshpatel-1884/riteshpatel-1884/output/pacman-contribution-graph.svg">
-  <img alt="Pacman Contribution Graph" src="https://raw.githubusercontent.com/riteshpatel-1884/riteshpatel-1884/output/pacman-contribution-graph.svg" width="100%">
-</picture>
-
-</div>
-
----
-
-<div align="center">
-
-![Profile View Counter](https://visitor-badge.laobi.icu/badge?page_id=riteshpatel1884.riteshpatel1884&label=Profile%20Views&style=flat-square&color=00d9ff)
-
-</div>
-
----
-
-<div align="center">
-
-### 💬 Let's Collaborate!
-
-I'm always interested in collaborating on exciting projects and discussing innovative ideas. Feel free to reach out!
-
-[![Say Hello](https://img.shields.io/badge/Say%20Hello-Let's%20Connect!-brightgreen?style=for-the-badge)](mailto:riteshpatel1884@gmail.com)
-
----
-
-<sub>✨ **Continuously learning, always building, forever improving** ✨</sub>
-
-<sub>Made with ❤️ by [Ritesh Patel](https://github.com/riteshpatel1884)</sub>
-
-</div>
+<script>
+  // Add smooth scroll behavior
+  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+      e.preventDefault();
+      const target = document.querySelector(this.getAttribute('href'));
+      if (target) {
+        target.scrollIntoView({ behavior: 'smooth' });
+      }
+    });
+  });
+
+  // Animate numbers on load
+  const animateNumbers = () => {
+    const statNumbers = document.querySelectorAll('.stat-number');
+    statNumbers.forEach(element => {
+      const target = parseInt(element.textContent);
+      let current = 0;
+      const increment = target / 30;
+      
+      const counter = setInterval(() => {
+        current += increment;
+        if (current >= target) {
+          element.textContent = element.textContent;
+          clearInterval(counter);
+        } else {
+          element.textContent = Math.floor(current) + '+';
+        }
+      }, 30);
+    });
+  };
+
+  // Trigger on load
+  window.addEventListener('load', animateNumbers);
+</script>
