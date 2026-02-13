@@ -74,845 +74,220 @@
 <!-- Proudly created with GPRM ( https://gprm.itsvg.in ) --> -->
 
 
-<style>
-  :root {
-    --primary: #00d9ff;
-    --secondary: #ff006e;
-    --accent: #8338ec;
-    --dark: #0a0e27;
-    --light: #f0f0ff;
-    --gold: #ffd60a;
-  }
+<div align="center">
 
-  @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700;900&family=Courier+Prime:wght@700&display=swap');
+# 🚀 Ritesh Patel
+## Full Stack Developer × AI Enthusiast × Problem Solver
 
-  * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
+[![Typing SVG](https://readme-typing-svg.demolab.com?font=Outfit&weight=700&size=28&duration=4000&pause=1000&color=00D9FF&center=true&vCenter=true&width=700&height=60&lines=Building+Elegant+Solutions;Web+Development+%26+AI;System+Design+Expert)](https://github.com/riteshpatel1884)
 
-  body {
-    font-family: 'Outfit', sans-serif;
-    background: linear-gradient(135deg, #0a0e27 0%, #1a1a4a 50%, #0f0f2e 100%);
-    color: var(--light);
-    min-height: 100vh;
-    overflow-x: hidden;
-  }
-
-  /* ═══════════════════════════════════════════════════════════════ */
-  /* FLOATING ANIMATED BACKGROUND */
-  /* ═══════════════════════════════════════════════════════════════ */
-
-  .animated-bg {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: -1;
-    overflow: hidden;
-  }
-
-  .gradient-orb {
-    position: absolute;
-    border-radius: 50%;
-    filter: blur(60px);
-    opacity: 0.3;
-  }
-
-  .orb-1 {
-    width: 400px;
-    height: 400px;
-    background: linear-gradient(135deg, #00d9ff, #0099cc);
-    top: -100px;
-    left: -100px;
-    animation: float 20s ease-in-out infinite;
-  }
-
-  .orb-2 {
-    width: 300px;
-    height: 300px;
-    background: linear-gradient(135deg, #ff006e, #8338ec);
-    bottom: -100px;
-    right: -100px;
-    animation: float 25s ease-in-out infinite reverse;
-  }
-
-  .orb-3 {
-    width: 350px;
-    height: 350px;
-    background: linear-gradient(135deg, #ffd60a, #ff006e);
-    top: 50%;
-    right: 10%;
-    animation: float 22s ease-in-out infinite;
-  }
-
-  @keyframes float {
-    0%, 100% { transform: translate(0, 0) scale(1); }
-    50% { transform: translate(30px, 30px) scale(1.1); }
-  }
-
-  /* ═══════════════════════════════════════════════════════════════ */
-  /* MAIN CONTAINER */
-  /* ═══════════════════════════════════════════════════════════════ */
-
-  .container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 60px 40px;
-    position: relative;
-    z-index: 1;
-  }
-
-  /* ═══════════════════════════════════════════════════════════════ */
-  /* HERO SECTION */
-  /* ═══════════════════════════════════════════════════════════════ */
-
-  .hero {
-    text-align: center;
-    margin-bottom: 80px;
-    animation: fadeInDown 0.8s ease-out;
-  }
-
-  .hero-title {
-    font-size: 4.5rem;
-    font-weight: 900;
-    margin-bottom: 20px;
-    background: linear-gradient(135deg, #00d9ff, #ff006e, #8338ec, #00d9ff);
-    background-size: 300% 300%;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-    animation: gradientShift 8s ease infinite, titlePulse 2s ease-in-out infinite;
-    letter-spacing: -2px;
-  }
-
-  @keyframes gradientShift {
-    0% { background-position: 0% 50%; }
-    50% { background-position: 100% 50%; }
-    100% { background-position: 0% 50%; }
-  }
-
-  @keyframes titlePulse {
-    0%, 100% { text-shadow: 0 0 20px rgba(0, 217, 255, 0.5); }
-    50% { text-shadow: 0 0 40px rgba(255, 0, 110, 0.6), 0 0 60px rgba(131, 56, 236, 0.4); }
-  }
-
-  .hero-subtitle {
-    font-size: 1.3rem;
-    color: var(--primary);
-    margin-bottom: 40px;
-    font-weight: 600;
-    animation: slideInUp 0.8s ease-out 0.2s both;
-  }
-
-  .bio-box {
-    background: rgba(255, 255, 255, 0.05);
-    border: 2px solid rgba(0, 217, 255, 0.3);
-    border-radius: 20px;
-    padding: 30px 40px;
-    margin: 30px auto;
-    max-width: 700px;
-    backdrop-filter: blur(10px);
-    animation: slideInUp 0.8s ease-out 0.4s both;
-    transition: all 0.3s ease;
-    position: relative;
-    overflow: hidden;
-  }
-
-  .bio-box::before {
-    content: '';
-    position: absolute;
-    top: -2px;
-    left: -2px;
-    right: -2px;
-    bottom: -2px;
-    background: linear-gradient(135deg, var(--primary), var(--secondary), var(--accent));
-    border-radius: 20px;
-    z-index: -1;
-    opacity: 0;
-    animation: borderGlow 3s ease-in-out infinite;
-  }
-
-  @keyframes borderGlow {
-    0%, 100% { opacity: 0; }
-    50% { opacity: 0.3; }
-  }
-
-  .bio-box:hover {
-    border-color: rgba(0, 217, 255, 0.6);
-    transform: translateY(-5px);
-    box-shadow: 0 20px 60px rgba(0, 217, 255, 0.2);
-  }
-
-  .bio-text {
-    font-size: 1.1rem;
-    line-height: 1.8;
-    color: var(--light);
-    font-weight: 500;
-  }
-
-  /* ═══════════════════════════════════════════════════════════════ */
-  /* TECH STACK SECTION */
-  /* ═══════════════════════════════════════════════════════════════ */
-
-  .section-title {
-    font-size: 2.5rem;
-    font-weight: 900;
-    margin-top: 80px;
-    margin-bottom: 50px;
-    text-align: center;
-    position: relative;
-    display: inline-block;
-    width: 100%;
-  }
-
-  .section-title::after {
-    content: '';
-    position: absolute;
-    bottom: -15px;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 100px;
-    height: 4px;
-    background: linear-gradient(90deg, var(--primary), var(--secondary), var(--accent));
-    border-radius: 2px;
-    animation: expandWidth 1s ease-out;
-  }
-
-  @keyframes expandWidth {
-    from { width: 0; }
-    to { width: 100px; }
-  }
-
-  .tech-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-    gap: 20px;
-    margin-bottom: 60px;
-  }
-
-  .tech-card {
-    background: rgba(255, 255, 255, 0.05);
-    border: 2px solid rgba(0, 217, 255, 0.2);
-    border-radius: 15px;
-    padding: 25px 15px;
-    text-align: center;
-    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-    cursor: pointer;
-    position: relative;
-    overflow: hidden;
-    animation: slideInUp 0.6s ease-out both;
-  }
-
-  .tech-card:nth-child(1) { animation-delay: 0.1s; }
-  .tech-card:nth-child(2) { animation-delay: 0.2s; }
-  .tech-card:nth-child(3) { animation-delay: 0.3s; }
-  .tech-card:nth-child(4) { animation-delay: 0.4s; }
-  .tech-card:nth-child(5) { animation-delay: 0.5s; }
-  .tech-card:nth-child(6) { animation-delay: 0.6s; }
-  .tech-card:nth-child(7) { animation-delay: 0.7s; }
-  .tech-card:nth-child(8) { animation-delay: 0.8s; }
-
-  .tech-card::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: -100%;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(90deg, transparent, rgba(0, 217, 255, 0.2), transparent);
-    animation: shimmer 3s infinite;
-  }
-
-  @keyframes shimmer {
-    0% { left: -100%; }
-    50% { left: 100%; }
-    100% { left: 100%; }
-  }
-
-  .tech-card:hover {
-    border-color: var(--primary);
-    background: rgba(0, 217, 255, 0.1);
-    transform: translateY(-10px) rotateZ(-2deg);
-    box-shadow: 0 20px 50px rgba(0, 217, 255, 0.3), inset 0 0 20px rgba(0, 217, 255, 0.1);
-  }
-
-  .tech-icon {
-    width: 60px;
-    height: 60px;
-    margin: 0 auto 15px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 2.5rem;
-    transition: transform 0.3s ease;
-  }
-
-  .tech-card:hover .tech-icon {
-    transform: scale(1.2) rotateZ(10deg);
-  }
-
-  .tech-name {
-    font-weight: 700;
-    font-size: 0.95rem;
-    color: var(--light);
-    letter-spacing: 0.5px;
-  }
-
-  /* ═══════════════════════════════════════════════════════════════ */
-  /* STATS SECTION */
-  /* ═══════════════════════════════════════════════════════════════ */
-
-  .stats-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 30px;
-    margin: 60px 0;
-  }
-
-  .stat-box {
-    background: rgba(255, 255, 255, 0.05);
-    border: 2px solid rgba(0, 217, 255, 0.2);
-    border-radius: 15px;
-    padding: 40px 30px;
-    text-align: center;
-    animation: slideInUp 0.8s ease-out both;
-    transition: all 0.3s ease;
-    position: relative;
-    overflow: hidden;
-  }
-
-  .stat-box:nth-child(1) { animation-delay: 0.2s; }
-  .stat-box:nth-child(2) { animation-delay: 0.4s; }
-  .stat-box:nth-child(3) { animation-delay: 0.6s; }
-
-  .stat-box::after {
-    content: '';
-    position: absolute;
-    top: -50%;
-    left: -50%;
-    width: 200%;
-    height: 200%;
-    background: radial-gradient(circle, rgba(0, 217, 255, 0.1) 0%, transparent 70%);
-    animation: pulse 4s ease-in-out infinite;
-  }
-
-  @keyframes pulse {
-    0%, 100% { transform: scale(1); opacity: 0; }
-    50% { opacity: 1; }
-  }
-
-  .stat-number {
-    font-size: 2.5rem;
-    font-weight: 900;
-    color: var(--primary);
-    margin-bottom: 10px;
-    animation: countUp 2s ease-out;
-  }
-
-  @keyframes countUp {
-    from { opacity: 0; transform: translateY(20px); }
-    to { opacity: 1; transform: translateY(0); }
-  }
-
-  .stat-label {
-    font-size: 1rem;
-    color: var(--light);
-    font-weight: 600;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-  }
-
-  .stat-box:hover {
-    border-color: var(--secondary);
-    background: rgba(255, 0, 110, 0.1);
-    transform: translateY(-10px);
-    box-shadow: 0 20px 50px rgba(255, 0, 110, 0.2);
-  }
-
-  /* ═══════════════════════════════════════════════════════════════ */
-  /* TIMELINE SECTION */
-  /* ═══════════════════════════════════════════════════════════════ */
-
-  .timeline {
-    position: relative;
-    max-width: 600px;
-    margin: 60px auto;
-  }
-
-  .timeline::before {
-    content: '';
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 4px;
-    height: 100%;
-    background: linear-gradient(180deg, var(--primary), var(--secondary), transparent);
-    border-radius: 2px;
-  }
-
-  .timeline-item {
-    margin-bottom: 50px;
-    position: relative;
-    width: 100%;
-    animation: slideInUp 0.8s ease-out both;
-  }
-
-  .timeline-item:nth-child(1) { animation-delay: 0.3s; }
-  .timeline-item:nth-child(2) { animation-delay: 0.4s; }
-  .timeline-item:nth-child(3) { animation-delay: 0.5s; }
-
-  .timeline-marker {
-    position: absolute;
-    left: 50%;
-    top: 0;
-    width: 20px;
-    height: 20px;
-    background: var(--primary);
-    border: 4px solid #0a0e27;
-    border-radius: 50%;
-    transform: translateX(-50%);
-    animation: pulse-marker 2s ease-in-out infinite;
-  }
-
-  @keyframes pulse-marker {
-    0%, 100% { box-shadow: 0 0 0 0 rgba(0, 217, 255, 0.4); }
-    50% { box-shadow: 0 0 0 10px rgba(0, 217, 255, 0); }
-  }
-
-  .timeline-content {
-    background: rgba(255, 255, 255, 0.05);
-    border: 2px solid rgba(0, 217, 255, 0.2);
-    border-radius: 10px;
-    padding: 20px;
-    margin-left: 60px;
-    transition: all 0.3s ease;
-  }
-
-  .timeline-item:hover .timeline-content {
-    border-color: var(--primary);
-    background: rgba(0, 217, 255, 0.1);
-    box-shadow: 0 10px 30px rgba(0, 217, 255, 0.2);
-  }
-
-  .timeline-title {
-    font-weight: 700;
-    color: var(--primary);
-    margin-bottom: 5px;
-  }
-
-  .timeline-desc {
-    color: var(--light);
-    font-size: 0.95rem;
-  }
-
-  /* ═══════════════════════════════════════════════════════════════ */
-  /* SOCIAL LINKS */
-  /* ═══════════════════════════════════════════════════════════════ */
-
-  .social-section {
-    text-align: center;
-    margin: 80px 0;
-    animation: slideInUp 1s ease-out 0.6s both;
-  }
-
-  .social-links {
-    display: flex;
-    justify-content: center;
-    gap: 30px;
-    flex-wrap: wrap;
-    margin-top: 40px;
-  }
-
-  .social-link {
-    width: 70px;
-    height: 70px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background: rgba(255, 255, 255, 0.05);
-    border: 2px solid rgba(0, 217, 255, 0.3);
-    border-radius: 50%;
-    font-size: 1.8rem;
-    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-    text-decoration: none;
-    position: relative;
-    overflow: hidden;
-    animation: slideInUp 0.6s ease-out both;
-  }
-
-  .social-link:nth-child(1) { animation-delay: 0.4s; }
-  .social-link:nth-child(2) { animation-delay: 0.5s; }
-  .social-link:nth-child(3) { animation-delay: 0.6s; }
-  .social-link:nth-child(4) { animation-delay: 0.7s; }
-
-  .social-link::before {
-    content: '';
-    position: absolute;
-    inset: 0;
-    background: linear-gradient(135deg, var(--primary), var(--secondary));
-    opacity: 0;
-    transition: opacity 0.3s ease;
-    z-index: -1;
-  }
-
-  .social-link:hover::before {
-    opacity: 0.2;
-  }
-
-  .social-link:hover {
-    border-color: var(--primary);
-    transform: translateY(-8px) rotateZ(10deg) scale(1.1);
-    box-shadow: 0 20px 40px rgba(0, 217, 255, 0.3);
-  }
-
-  /* ═══════════════════════════════════════════════════════════════ */
-  /* FOOTER */
-  /* ═══════════════════════════════════════════════════════════════ */
-
-  .footer {
-    text-align: center;
-    padding: 60px 20px;
-    margin-top: 100px;
-    border-top: 2px solid rgba(0, 217, 255, 0.2);
-    animation: slideInUp 1.2s ease-out 0.8s both;
-  }
-
-  .footer-text {
-    color: var(--light);
-    font-size: 0.95rem;
-    letter-spacing: 0.5px;
-    margin-bottom: 20px;
-  }
-
-  .visitor-badge {
-    display: inline-block;
-    padding: 10px 20px;
-    background: rgba(0, 217, 255, 0.1);
-    border: 2px solid var(--primary);
-    border-radius: 20px;
-    color: var(--primary);
-    font-weight: 600;
-    animation: pulse-text 2s ease-in-out infinite;
-  }
-
-  @keyframes pulse-text {
-    0%, 100% { opacity: 1; }
-    50% { opacity: 0.7; }
-  }
-
-  /* ═══════════════════════════════════════════════════════════════ */
-  /* ANIMATIONS */
-  /* ═══════════════════════════════════════════════════════════════ */
-
-  @keyframes fadeInDown {
-    from {
-      opacity: 0;
-      transform: translateY(-30px);
-    }
-    to {
-      opacity: 1;
-      transform: translateY(0);
-    }
-  }
-
-  @keyframes slideInUp {
-    from {
-      opacity: 0;
-      transform: translateY(30px);
-    }
-    to {
-      opacity: 1;
-      transform: translateY(0);
-    }
-  }
-
-  /* ═══════════════════════════════════════════════════════════════ */
-  /* RESPONSIVE */
-  /* ═══════════════════════════════════════════════════════════════ */
-
-  @media (max-width: 768px) {
-    .hero-title {
-      font-size: 2.5rem;
-    }
-
-    .container {
-      padding: 40px 20px;
-    }
-
-    .section-title {
-      font-size: 1.8rem;
-    }
-
-    .tech-grid {
-      grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
-      gap: 15px;
-    }
-
-    .social-links {
-      gap: 20px;
-    }
-
-    .social-link {
-      width: 60px;
-      height: 60px;
-      font-size: 1.5rem;
-    }
-
-    .timeline::before {
-      left: 20px;
-    }
-
-    .timeline-marker {
-      left: 20px;
-    }
-
-    .timeline-content {
-      margin-left: 60px;
-    }
-  }
-</style>
-
-<!-- Animated Background -->
-<div class="animated-bg">
-  <div class="gradient-orb orb-1"></div>
-  <div class="gradient-orb orb-2"></div>
-  <div class="gradient-orb orb-3"></div>
-</div>
-
-<div class="container">
-
-  <!-- HERO SECTION -->
-  <div class="hero">
-    <h1 class="hero-title">RITESH PATEL</h1>
-    <p class="hero-subtitle">Full Stack Developer × AI Enthusiast × Problem Solver</p>
-    
-    <div class="bio-box">
-      <p class="bio-text">
-        🚀 Crafting elegant solutions at the intersection of web development and machine learning. 
-        Deep dive into systems architecture, solve complex problems, and build products that create impact.
-      </p>
-    </div>
-  </div>
-
-  <!-- TECH STACK SECTION -->
-  <div>
-    <h2 class="section-title">💻 TECH ARSENAL</h2>
-    
-    <h3 style="text-align: center; color: #00d9ff; margin: 60px 0 40px 0; font-size: 1.3rem; text-transform: uppercase; letter-spacing: 2px;">Frontend</h3>
-    <div class="tech-grid">
-      <div class="tech-card">
-        <div class="tech-icon">⚡</div>
-        <div class="tech-name">HTML5</div>
-      </div>
-      <div class="tech-card">
-        <div class="tech-icon">🎨</div>
-        <div class="tech-name">Tailwind CSS</div>
-      </div>
-      <div class="tech-card">
-        <div class="tech-icon">✨</div>
-        <div class="tech-name">JavaScript</div>
-      </div>
-      <div class="tech-card">
-        <div class="tech-icon">⚛️</div>
-        <div class="tech-name">React</div>
-      </div>
-      <div class="tech-card">
-        <div class="tech-icon">▲</div>
-        <div class="tech-name">Next.js</div>
-      </div>
-      <div class="tech-card">
-        <div class="tech-icon">🎭</div>
-        <div class="tech-name">TypeScript</div>
-      </div>
-    </div>
-
-    <h3 style="text-align: center; color: #ff006e; margin: 60px 0 40px 0; font-size: 1.3rem; text-transform: uppercase; letter-spacing: 2px;">Backend & Database</h3>
-    <div class="tech-grid">
-      <div class="tech-card">
-        <div class="tech-icon">🟢</div>
-        <div class="tech-name">Node.js</div>
-      </div>
-      <div class="tech-card">
-        <div class="tech-icon">☕</div>
-        <div class="tech-name">Java</div>
-      </div>
-      <div class="tech-card">
-        <div class="tech-icon">🚂</div>
-        <div class="tech-name">Express.js</div>
-      </div>
-      <div class="tech-card">
-        <div class="tech-icon">🍃</div>
-        <div class="tech-name">MongoDB</div>
-      </div>
-      <div class="tech-card">
-        <div class="tech-icon">🐘</div>
-        <div class="tech-name">PostgreSQL</div>
-      </div>
-      <div class="tech-card">
-        <div class="tech-icon">📊</div>
-        <div class="tech-name">MySQL</div>
-      </div>
-    </div>
-
-    <h3 style="text-align: center; color: #8338ec; margin: 60px 0 40px 0; font-size: 1.3rem; text-transform: uppercase; letter-spacing: 2px;">AI & Data Science</h3>
-    <div class="tech-grid">
-      <div class="tech-card">
-        <div class="tech-icon">🐍</div>
-        <div class="tech-name">Python</div>
-      </div>
-      <div class="tech-card">
-        <div class="tech-icon">🧠</div>
-        <div class="tech-name">TensorFlow</div>
-      </div>
-      <div class="tech-card">
-        <div class="tech-icon">🔥</div>
-        <div class="tech-name">PyTorch</div>
-      </div>
-      <div class="tech-card">
-        <div class="tech-icon">📈</div>
-        <div class="tech-name">NumPy</div>
-      </div>
-      <div class="tech-card">
-        <div class="tech-icon">📊</div>
-        <div class="tech-name">Pandas</div>
-      </div>
-      <div class="tech-card">
-        <div class="tech-icon">🎯</div>
-        <div class="tech-name">Scikit-Learn</div>
-      </div>
-    </div>
-
-    <h3 style="text-align: center; color: #ffd60a; margin: 60px 0 40px 0; font-size: 1.3rem; text-transform: uppercase; letter-spacing: 2px;">Tools & Platforms</h3>
-    <div class="tech-grid">
-      <div class="tech-card">
-        <div class="tech-icon">🔧</div>
-        <div class="tech-name">Git</div>
-      </div>
-      <div class="tech-card">
-        <div class="tech-icon">🐙</div>
-        <div class="tech-name">GitHub</div>
-      </div>
-      <div class="tech-card">
-        <div class="tech-icon">🐳</div>
-        <div class="tech-name">Docker</div>
-      </div>
-      <div class="tech-card">
-        <div class="tech-icon">🔥</div>
-        <div class="tech-name">Firebase</div>
-      </div>
-      <div class="tech-card">
-        <div class="tech-icon">🌐</div>
-        <div class="tech-name">Netlify</div>
-      </div>
-      <div class="tech-card">
-        <div class="tech-icon">▲</div>
-        <div class="tech-name">Vercel</div>
-      </div>
-    </div>
-  </div>
-
-  <!-- STATS SECTION -->
-  <h2 class="section-title" style="margin-top: 100px;">📊 ACHIEVEMENTS</h2>
-  <div class="stats-container">
-    <div class="stat-box">
-      <div class="stat-number">500+</div>
-      <div class="stat-label">Contributions</div>
-    </div>
-    <div class="stat-box">
-      <div class="stat-number">50+</div>
-      <div class="stat-label">Projects</div>
-    </div>
-    <div class="stat-box">
-      <div class="stat-number">10K+</div>
-      <div class="stat-label">Lines of Code</div>
-    </div>
-  </div>
-
-  <!-- TIMELINE SECTION -->
-  <h2 class="section-title" style="margin-top: 100px;">🎯 CURRENT FOCUS</h2>
-  <div class="timeline">
-    <div class="timeline-item">
-      <div class="timeline-marker"></div>
-      <div class="timeline-content">
-        <div class="timeline-title">🔍 Deep Learning</div>
-        <div class="timeline-desc">Exploring advanced neural network architectures and ML systems</div>
-      </div>
-    </div>
-    <div class="timeline-item">
-      <div class="timeline-marker"></div>
-      <div class="timeline-content">
-        <div class="timeline-title">🏗️ System Design</div>
-        <div class="timeline-desc">Building scalable, high-performance distributed systems</div>
-      </div>
-    </div>
-    <div class="timeline-item">
-      <div class="timeline-marker"></div>
-      <div class="timeline-content">
-        <div class="timeline-title">🚀 Open Source</div>
-        <div class="timeline-desc">Contributing to innovative projects and community growth</div>
-      </div>
-    </div>
-  </div>
-
-  <!-- SOCIAL SECTION -->
-  <div class="social-section">
-    <h2 class="section-title">🌐 CONNECT WITH ME</h2>
-    <div class="social-links">
-      <a href="https://linkedin.com/in/riteshpatel1884" class="social-link" title="LinkedIn">in</a>
-      <a href="https://x.com/riteshpatel1884" class="social-link" title="X / Twitter">𝕏</a>
-      <a href="https://instagram.com/riteshpatel1884" class="social-link" title="Instagram">📷</a>
-      <a href="mailto:riteshpatel1884@gmail.com" class="social-link" title="Email">✉️</a>
-    </div>
-  </div>
-
-  <!-- FOOTER -->
-  <div class="footer">
-    <p class="footer-text">💡 Always learning • Always building • Always improving</p>
-    <div class="visitor-badge">
-      👀 Profile Views: <span style="color: var(--primary); font-weight: 900;">Loading...</span>
-    </div>
-    <p style="color: var(--light); margin-top: 40px; font-size: 0.85rem; opacity: 0.7;">
-      © 2024 Ritesh Patel. Crafted with passion and precision.
-    </p>
-  </div>
+---
 
 </div>
 
-<script>
-  // Add smooth scroll behavior
-  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-    anchor.addEventListener('click', function (e) {
-      e.preventDefault();
-      const target = document.querySelector(this.getAttribute('href'));
-      if (target) {
-        target.scrollIntoView({ behavior: 'smooth' });
-      }
-    });
-  });
+<img src="https://raw.githubusercontent.com/riteshpatel-1884/riteshpatel-1884/output/pacman-contribution-graph.svg" alt="Contribution Graph">
 
-  // Animate numbers on load
-  const animateNumbers = () => {
-    const statNumbers = document.querySelectorAll('.stat-number');
-    statNumbers.forEach(element => {
-      const target = parseInt(element.textContent);
-      let current = 0;
-      const increment = target / 30;
-      
-      const counter = setInterval(() => {
-        current += increment;
-        if (current >= target) {
-          element.textContent = element.textContent;
-          clearInterval(counter);
-        } else {
-          element.textContent = Math.floor(current) + '+';
-        }
-      }, 30);
-    });
-  };
+---
 
-  // Trigger on load
-  window.addEventListener('load', animateNumbers);
-</script>
+## 💫 About Me
+
+<div align="center">
+
+```
+🎯 Passionate Full Stack Developer
+🔥 Creating elegant solutions at scale
+💡 Problem solver with system design expertise
+🚀 Building the future with modern tech
+```
+
+I specialize in crafting **scalable web applications**, **distributed systems**, and **AI-integrated solutions**. 
+Driven by curiosity and a passion for clean code.
+
+</div>
+
+---
+
+## 🛠️ Tech Stack
+
+<div align="center">
+
+### 🎨 Frontend
+<table>
+<tr>
+<td align="center" width="80"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" width="50" height="50" alt="HTML5"/><br><sub><b>HTML5</b></sub></td>
+<td align="center" width="80"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" width="50" height="50" alt="CSS3"/><br><sub><b>CSS3</b></sub></td>
+<td align="center" width="80"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" width="50" height="50" alt="JavaScript"/><br><sub><b>JavaScript</b></sub></td>
+<td align="center" width="80"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" width="50" height="50" alt="React"/><br><sub><b>React</b></sub></td>
+<td align="center" width="80"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg" width="50" height="50" alt="Next.js"/><br><sub><b>Next.js</b></sub></td>
+<td align="center" width="80"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-original-wordmark.svg" width="50" height="50" alt="Tailwind"/><br><sub><b>Tailwind</b></sub></td>
+</tr>
+</table>
+
+### 🔧 Backend
+<table>
+<tr>
+<td align="center" width="80"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" width="50" height="50" alt="Node.js"/><br><sub><b>Node.js</b></sub></td>
+<td align="center" width="80"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg" width="50" height="50" alt="Express"/><br><sub><b>Express</b></sub></td>
+<td align="center" width="80"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" width="50" height="50" alt="Java"/><br><sub><b>Java</b></sub></td>
+<td align="center" width="80"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" width="50" height="50" alt="Python"/><br><sub><b>Python</b></sub></td>
+<td align="center" width="80"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" width="50" height="50" alt="TypeScript"/><br><sub><b>TypeScript</b></sub></td>
+</tr>
+</table>
+
+### 💾 Databases
+<table>
+<tr>
+<td align="center" width="80"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" width="50" height="50" alt="MongoDB"/><br><sub><b>MongoDB</b></sub></td>
+<td align="center" width="80"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" width="50" height="50" alt="PostgreSQL"/><br><sub><b>PostgreSQL</b></sub></td>
+<td align="center" width="80"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" width="50" height="50" alt="MySQL"/><br><sub><b>MySQL</b></sub></td>
+<td align="center" width="80"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-original.svg" width="50" height="50" alt="Firebase"/><br><sub><b>Firebase</b></sub></td>
+</tr>
+</table>
+
+### 🤖 AI & Data Science
+<table>
+<tr>
+<td align="center" width="80"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tensorflow/tensorflow-original.svg" width="50" height="50" alt="TensorFlow"/><br><sub><b>TensorFlow</b></sub></td>
+<td align="center" width="80"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pytorch/pytorch-original.svg" width="50" height="50" alt="PyTorch"/><br><sub><b>PyTorch</b></sub></td>
+<td align="center" width="80"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/numpy/numpy-original.svg" width="50" height="50" alt="NumPy"/><br><sub><b>NumPy</b></sub></td>
+<td align="center" width="80"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pandas/pandas-original.svg" width="50" height="50" alt="Pandas"/><br><sub><b>Pandas</b></sub></td>
+<td align="center" width="80"><img src="https://img.shields.io/badge/Scikit_Learn-F7931E?style=flat&logo=scikit-learn&logoColor=white" width="50" height="50" alt="Scikit-Learn"/><br><sub><b>Scikit</b></sub></td>
+</tr>
+</table>
+
+### 🛠️ Tools & Platforms
+<table>
+<tr>
+<td align="center" width="80"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" width="50" height="50" alt="Git"/><br><sub><b>Git</b></sub></td>
+<td align="center" width="80"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" width="50" height="50" alt="GitHub"/><br><sub><b>GitHub</b></sub></td>
+<td align="center" width="80"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" width="50" height="50" alt="Docker"/><br><sub><b>Docker</b></sub></td>
+<td align="center" width="80"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/kubernetes/kubernetes-plain.svg" width="50" height="50" alt="Kubernetes"/><br><sub><b>Kubernetes</b></sub></td>
+<td align="center" width="80"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg" width="50" height="50" alt="Linux"/><br><sub><b>Linux</b></sub></td>
+</tr>
+</table>
+
+</div>
+
+---
+
+## 📊 GitHub Analytics
+
+<div align="center">
+
+![GitHub Stats](https://github-readme-stats.vercel.app/api?username=riteshpatel1884&theme=tokyonight&hide_border=true&include_all_commits=true&count_private=true&show_icons=true&rank_icon=github)
+
+</div>
+
+<div align="center">
+
+![Streak Stats](https://github-readme-streak-stats.herokuapp.com/?user=riteshpatel1884&theme=tokyonight&hide_border=true&stroke=00D9FF)
+
+</div>
+
+<div align="center">
+
+![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=riteshpatel1884&theme=tokyonight&hide_border=true&include_all_commits=true&count_private=true&layout=compact&card_width=320)
+
+</div>
+
+---
+
+## 🏆 GitHub Achievements
+
+<div align="center">
+
+![GitHub Trophies](https://github-profile-trophy.vercel.app/?username=riteshpatel1884&theme=tokyonight&no-frame=true&no-bg=true&margin-w=4&row=2&column=3)
+
+</div>
+
+---
+
+## 📈 Top Contributions
+
+<div align="center">
+
+![Contribution Stats](https://github-contributor-stats.vercel.app/api?username=riteshpatel1884&limit=5&theme=tokyonight&combine_all_yearly_contributions=true)
+
+</div>
+
+---
+
+## 🎯 What I'm Working On
+
+<div align="center">
+
+| 🔍 | 🏗️ | 🚀 | 💡 |
+|:---:|:---:|:---:|:---:|
+| **Deep Learning** | **System Design** | **Microservices** | **Open Source** |
+| Neural Networks | Scalable Apps | Docker & K8s | Community |
+
+</div>
+
+---
+
+## 📊 Quick Stats
+
+<div align="center">
+
+| Metric | Value |
+|--------|-------|
+| 🔨 **Projects** | 50+ |
+| 📝 **Contributions** | 500+ |
+| 💻 **Languages** | 8+ |
+| 🎯 **Expertise** | Full Stack |
+
+</div>
+
+---
+
+## 🌐 Let's Connect!
+
+<div align="center">
+
+[![LinkedIn](https://img.shields.io/badge/-LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/riteshpatel1884)
+[![Twitter](https://img.shields.io/badge/-Twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white)](https://x.com/riteshpatel1884)
+[![Instagram](https://img.shields.io/badge/-Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white)](https://instagram.com/riteshpatel1884)
+[![Email](https://img.shields.io/badge/-Email-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:riteshpatel1884@gmail.com)
+[![Portfolio](https://img.shields.io/badge/-Portfolio-FF00FF?style=for-the-badge&logo=web&logoColor=white)](https://yourportfolio.com)
+
+</div>
+
+---
+
+## 💬 Let's Collaborate!
+
+<div align="center">
+
+I'm always interested in collaborating on exciting projects. Feel free to reach out!
+
+[![](https://img.shields.io/badge/Say_Hello-%40riteshpatel1884-blue?logo=twitter&logoColor=white&style=for-the-badge)](https://x.com/riteshpatel1884)
+
+</div>
+
+---
+
+<div align="center">
+
+![Profile Views](https://visitor-badge.laobi.icu/badge?page_id=riteshpatel1884.riteshpatel1884&label=Profile%20Views&style=flat&color=0366d6)
+
+</div>
+
+---
+
+<div align="center">
+
+### 🎨 Activity Graph
+
+![Activity Graph](https://activity-graph.herokuapp.com/graph?username=riteshpatel1884&theme=dracula&hide_border=true)
+
+</div>
+
+---
+
+<div align="center">
+
+<sub>✨ **Continuously learning • Always building • Forever improving** ✨</sub>
+
+<sub>Made with ❤️ by [Ritesh Patel](https://github.com/riteshpatel1884) | [Creative Commons License](https://creativecommons.org/licenses/by-nc-sa/4.0/)</sub>
+
+</div>
