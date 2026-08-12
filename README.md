@@ -1,16 +1,48 @@
-## Hi there 👋
+<h1 align="center">Hi 👋, I'm Ritesh Patel</h1>
 
-<!--
-**ritesh1884/ritesh1884** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+<h3 align="center">
+  AI Engineer | Generative AI | RAG | AI Agents | Backend Engineering
+</h3>
 
-Here are some ideas to get you started:
+<p align="center">
+  <a href="https://github.com/ritesh1884">
+    <img src="https://komarev.com/ghpvc/?username=ritesh1884&label=Profile%20Views&color=0e75b6&style=flat" alt="Profile Views"/>
+  </a>
+  <a href="https://github.com/ritesh1884?tab=followers">
+    <img src="https://img.shields.io/github/followers/ritesh1884?label=Followers&style=flat" alt="GitHub Followers"/>
+  </a>
+  <a href="https://github.com/ritesh1884?tab=repositories">
+    <img src="https://img.shields.io/github/stars/ritesh1884?label=Stars&style=flat" alt="GitHub Stars"/>
+  </a>
+</p>
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+---
+
+## 🚀 About Me
+
+I'm a **B.Tech Computer Science student focused on AI Engineering and Generative AI**.
+
+I enjoy building AI systems that go beyond simple LLM API calls — from **RAG pipelines and AI agents to evaluation, observability, guardrails, security and production deployment**.
+
+Currently focused on:
+
+- 🤖 Generative AI & LLM Applications
+- 🔎 Retrieval-Augmented Generation (RAG)
+- 🧠 AI Agents & Agentic Workflows
+- 🛡️ AI Guardrails & Security
+- 📊 LLM Evaluation & Observability
+- ⚙️ Backend & API Engineering
+- 🐳 Docker & Production Deployment
+- 🧩 Vector Databases & Embeddings
+
+```text
+AI Engineering
+     │
+     ├── LLMs
+     ├── RAG
+     ├── Agents
+     ├── Evaluation
+     ├── Observability
+     ├── Guardrails
+     ├── Security
+     └── Deployment
