@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0e75b6&height=200&section=header&text=Ritesh%20Patel&fontSize=60&fontColor=ffffff&animation=fadeIn&fontAlignY=35&desc=AI%20Engineer%20|%20ML%20·%20NLP%20·%20Computer%20Vision&descAlignY=55&descSize=18" width="100%"/>
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0e75b6&height=200&section=header&text=Ritesh%20Patel&fontSize=60&fontColor=ffffff&animation=fadeIn&fontAlignY=35&desc=AI%20Engineer&descAlignY=55&descSize=18" width="100%"/>
 
 <img src="https://readme-typing-svg.demolab.com/?lines=Building+ML+%2F+NLP+%2F+CV+systems;Open-source+%26+Research+enthusiast;Turning+ideas+into+shipped+products&font=Fira%20Code&center=true&width=500&height=40&color=0e75b6&vCenter=true&size=22"/>
 
